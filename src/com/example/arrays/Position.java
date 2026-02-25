@@ -1,5 +1,6 @@
 package com.example.arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //Java Program to Find the kth Element in an Array
@@ -21,5 +22,38 @@ public class Position
         System.out.print("Enter the k th position at which you want to check number:");
         int k = s.nextInt();
         System.out.println("Number:"+a[k-1]);
+
+
+
+
+
+        //Java 8
+        int[] arr = {9, 4, 7, 3};
+        int kth = 2; // Example: 2nd smallest
+
+        int kthElement = Arrays.stream(arr)
+                .sorted()
+                .skip(kth - 1)   // skip (k-1) elements
+                .findFirst()
+                .getAsInt();
+
+        System.out.println(kth  + "th smallest element: " + kthElement);
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
