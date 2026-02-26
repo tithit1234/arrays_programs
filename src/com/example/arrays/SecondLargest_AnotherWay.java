@@ -7,7 +7,7 @@ import java.util.Optional;
 //Important Program for Interview
 public class SecondLargest_AnotherWay {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int[] arr = {9, 4, 7, 3};
         int temp;
         for (int i = 0; i < arr.length; i++) {
@@ -20,6 +20,8 @@ public class SecondLargest_AnotherWay {
 
             }
         }
+
+        System.out.println("Descending Array------> "+  Arrays.toString(arr));
 
         System.out.println("First way - The second largest element is " + arr[arr.length - 2]);
         System.out.println("The smallest element is " + arr[0]);
